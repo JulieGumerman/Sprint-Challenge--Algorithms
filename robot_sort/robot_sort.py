@@ -96,15 +96,25 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-    
-        for i in range(len(self._list)):
-            minimum_index = i
-            for j in range(i + 1, len(self._list)):
-                if self._list[minimum_index] > self._list[j]:
-                    minimum_index = j
-            temp = self._list[i]
-            self._list[i] = self._list[minimum_index]
-            self._list[minimum_index] = temp
+
+        if self.move_right == True:
+            self.compare_item()
+            if 1:
+                self.swap_item()
+                self.sort()
+            else:
+                self.sort()
+        else:
+            self.move_left() 
+            
+        # for i in range(len(self._list)):
+        #     minimum_index = i
+        #     for j in range(i + 1, len(self._list)):
+        #         if self._list[minimum_index] > self._list[j]:
+        #             minimum_index = j
+        #     temp = self._list[i]
+        #     self._list[i] = self._list[minimum_index]
+        #     self._list[minimum_index] = temp
 
 
 
