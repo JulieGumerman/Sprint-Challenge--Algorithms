@@ -113,9 +113,12 @@ class SortingRobot:
             #if you don't get a -1 (your held item is equal or greater), proceed with sorting through recursion
                 self.sort()
         else:
+            
             #Somehow I need to get ALL THE WAY LEFT
-            self.move_left() 
-
+            
+            while self.can_move_left() == True:
+                self.move_left()
+            #I know that you can't use a while loop, but for planning purposes, let's give it a go...
 
 
 
