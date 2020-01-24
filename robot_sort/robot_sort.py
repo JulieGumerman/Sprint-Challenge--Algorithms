@@ -96,8 +96,17 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+
         # Fill this out
-        pass
+        for i in range(len(self.list)):
+            minimum_index = i
+            for j in range(i + 1, len(self.list)):
+                if self.list[minimum_index] > self.list[j]:
+                    minimum_index = j
+            temp = self.list[i]
+            self.list[i] = self.list[minimum_index]
+            arr[minimum_index] = temp
+
 
 
 if __name__ == "__main__":
