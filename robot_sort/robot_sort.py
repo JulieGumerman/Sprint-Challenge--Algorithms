@@ -96,8 +96,31 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        #Bubble sort
+
+        #proceed if you can move right
+        self.swap_item()
+        if self.move_right == True:
+            #compare items
+            self.compare_item()
+            #if you get a -1 (held item is less)
+            if -1:
+                #swap and keep going
+                self.swap_item()
+                #recursion(keep going until you can't)
+                self.sort()
+            else:
+            #if you don't get a -1 (your held item is equal or greater), proceed with sorting through recursion
+                self.sort()
+        else:
+            
+            #Somehow I need to get ALL THE WAY LEFT
+            
+            while self.can_move_left() == True:
+                self.move_left()
+            #I know that you can't use a while loop, but for planning purposes, let's give it a go...
+
+
 
 
 if __name__ == "__main__":
