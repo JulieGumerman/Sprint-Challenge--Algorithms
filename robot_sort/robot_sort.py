@@ -96,8 +96,7 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-
-        # Fill this out
+        
         for i in range(len(self.list)):
             minimum_index = i
             for j in range(i + 1, len(self.list)):
