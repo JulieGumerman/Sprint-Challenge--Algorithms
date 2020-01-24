@@ -10,8 +10,8 @@ def count_th(word):
         return 1 + count_th(word[1:])
     elif word[0] != "t":
         return count_th(word[1:])  
-    elif word[len(word) - 1]:
-        return 1
+    else:
+         return 1 + count_th("")
           
     # Hate that I can't use the statement below.
     # It works.
