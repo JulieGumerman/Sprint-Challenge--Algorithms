@@ -2,13 +2,13 @@
 
 ## Exercise I
 
-a)
+a) A is O(n). It will grow linearly as your input increases. If you just have one good ol' loop, not nested, it will be O(n).
 
 
-b)
+b) B is O(n log n). The use of a while loop instead of a for loop keeps it out of O(n^c) territory. It's still not great, and it'll slow down a bit as your input gets larger.
 
 
-c)
+c)C is O(n). The fact that the function only calls itself once within itself, rather than multiple times, and that it only does basic multiplication on each repeat, keeps things linear.
 
 ## Exercise II
 
