@@ -99,6 +99,7 @@ class SortingRobot:
         #Bubble sort
 
         #proceed if you can move right
+        self.swap_item()
         if self.move_right == True:
             #compare items
             self.compare_item()
