@@ -96,25 +96,26 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        #Bubble sort
 
+        #proceed if you can move right
         if self.move_right == True:
+            #compare items
             self.compare_item()
-            if 1:
+            #if you get a -1 (held item is less)
+            if -1:
+                #swap and keep going
                 self.swap_item()
+                #recursion(keep going until you can't)
                 self.sort()
             else:
+            #if you don't get a -1 (your held item is equal or greater), proceed with sorting through recursion
                 self.sort()
         else:
+            #Somehow I need to get ALL THE WAY LEFT
             self.move_left() 
-            
-        # for i in range(len(self._list)):
-        #     minimum_index = i
-        #     for j in range(i + 1, len(self._list)):
-        #         if self._list[minimum_index] > self._list[j]:
-        #             minimum_index = j
-        #     temp = self._list[i]
-        #     self._list[i] = self._list[minimum_index]
-        #     self._list[minimum_index] = temp
+
+
 
 
 
